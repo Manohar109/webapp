@@ -12,8 +12,8 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://ec2-3-26-20-0.ap-southeast-2.compute.amazonaws.com:9000/</sonar.host.url>
-		<sonar.login>9ce6befde99fbd804996f85484bf6068dff09401</sonar.login>
+		<sonar.host.url>http://13.238.182.30:9000/</sonar.host.url>
+		<sonar.login>5b6c58bae15379bdaabcb9f11a80ab1803ebc077</sonar.login>
 		<!--<sonar.password>admin</sonar.password>-->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -33,13 +33,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://54.255.174.111:8081/repository/flipkart-release/</url>
+	      <url>http://ec2-54-206-125-17.ap-southeast-2.compute.amazonaws.com:8081/repository/maven-RELEASE/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://54.255.174.111:8081/repository/flipkart-snapshot/</url>
+	      <url>http://ec2-54-206-125-17.ap-southeast-2.compute.amazonaws.com:8081/repository/maven-snapshots/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
