@@ -6,6 +6,19 @@
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>WebApp Maven Webapp</name>
+
+  properties>
+		<jdk.version>1.8</jdk.version>
+		<spring.version>5.1.2.RELEASE</spring.version>
+		<junit.version>4.11</junit.version>
+		<log4j.version>1.2.17</log4j.version>
+		<sonar.host.url>http://ec2-3-26-20-0.ap-southeast-2.compute.amazonaws.com:9000/</sonar.host.url>
+		<sonar.login>9ce6befde99fbd804996f85484bf6068dff09401</sonar.login>
+		<!--<sonar.password>admin</sonar.password>-->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -15,6 +28,22 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+<distributionManagement>
+	
+	    <repository>
+	      <id>nexus</id>
+	      <name>Mithun Technologies Releases Nexus Repository</name>
+	      <url>http://54.255.174.111:8081/repository/flipkart-release/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>Mithun Technologies Snapshot Nexus Repository </name>
+	      <url>http://54.255.174.111:8081/repository/flipkart-snapshot/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
+
   <build>
     <finalName>WebApp</finalName>
   </build>
