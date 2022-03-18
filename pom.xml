@@ -7,7 +7,7 @@
   <version>1.0-SNAPSHOT</version>
   <name>WebApp Maven Webapp</name>
 
-  properties>
+  <properties>
 		<jdk.version>1.8</jdk.version>
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
